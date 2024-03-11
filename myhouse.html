@@ -1,0 +1,392 @@
+<!Doctype <!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> My house</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    </head>
+    <body>
+        <style>
+            
+@import url('https://fonts.googleapis.com/css2?family=Marhey:wght@300..700&family=Oleo+Script:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Marhey:wght@300..700&family=Oleo+Script:wght@400;700&display=swap');
+
+            *{
+                margin: 0;
+                padding:0;
+                box-sizing: border-box;
+                text-decoration: none;
+                list-style: none;
+            }
+
+            header{
+        padding-left: 50px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100px;
+        border: solid rgb(255, 255, 255) 1px;
+        background-color: rgb(129, 110, 68);
+        display:flex;
+        justify-content: flex-start;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+            }
+
+            li{
+                float: left;
+                margin-left: 30px;
+                font-size: 30px;
+                margin-right: 35px;
+                font-family: "Oleo Script", system-ui;
+                font-style: normal;
+            }
+            li:hover{
+                color: rgb(68, 0, 255);
+                cursor: pointer;
+            }
+#man>img{
+    margin-right: 105px;
+    width: 60px;
+}
+
+           
+            #logo-img {
+                height: inherit;
+                border-radius: 50%; }
+
+            #myhouse{
+            z-index: 2;
+            font-size: 25px;
+            position: absolute;
+            top:67px;
+            font-family: "Oleo Script", system-ui;
+            color:#fdde8a;
+            font-weight: 700;
+             font-style: normal;
+             text-shadow: -1px -4px 5px black ; 
+        }
+
+
+
+           #chandelier{
+                            position: fixed;
+                            top: 80px;
+                            right: 20px ;
+                            z-index: 1;
+                            width: 200px; 
+                            height: 200px;                       
+                        }
+            #wallpaper{
+                margin-top: 90px;
+                width: 100%;
+                height: 900px;
+                padding-top: 10%;
+                background-image: url("wallpaper.jpg");
+                background-size: cover;
+                background-position: center;
+                background-attachment: scroll;
+            }
+            #second-wallpaper{
+                margin-top: 60px;
+                width: 100%;
+                height: 900px;
+                padding-top: 10%;
+                background-image: url("wallpapersec.jpg");
+                background-size: cover;
+                background-position: center;
+                background-attachment: scroll;
+            }
+
+            .wallpaper-head{
+                
+                margin-left: 35%;
+                font-family: "Oleo Script", system-ui;
+                 font-weight: 700;
+                 font-style: normal; 
+                 color:#f5d783;
+                 font-size: 60px;
+            }
+            .wallpaper-text{
+                margin-left: 30%;
+                font-family: "Oleo Script", system-ui;
+                font-weight: 300;
+                font-style: normal; 
+                color:white;  
+                font-size: 30px;
+            }
+            
+           
+            #products{
+                margin-top: 50px;
+            margin-left: 40%;
+                 font-size: 50px;
+
+                   }
+            
+            .container{
+                   margin-top: 50px;
+                   width: 100%;
+                   display: flex;
+                   flex-wrap: wrap;
+                   justify-content: center;
+                   gap: 50px; }
+
+       
+
+            .fur-box{
+                width: 20%;
+                height: 30%;
+                padding: 5px;
+                border:solid black 1px;
+                border-radius: 10px;
+                    }
+            .like{
+                z-index: 1;
+                position: relative;
+                left: 90%;
+                top: 35px;
+                width: 35px;
+            }
+
+            .fur-box:hover{
+                cursor: pointer;
+                border:3px solid   rgb(68, 67, 68);
+                box-shadow: 1px 1px 6px 5px rgb(88, 88, 88);
+            }
+
+            h3{
+                font-size: 25px;
+                text-align: center;
+            }
+            .prise{
+                display: flex;
+                justify-content: center;
+                justify-content: space-between;
+            }
+            
+            .button{
+                color: blue;
+                
+            }
+            .button:hover{
+                color:rgb(0, 253, 0)
+            }
+            .fur-img{
+                width: 100%;
+                height: 250px;
+            }
+            footer{
+                margin-top: 80px;
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                
+            }
+            #about{
+                width: 50%;
+                height: 500px;
+                
+            }
+            #slideshow{
+             
+                width: 50%;
+                height: 500px;
+           
+
+            }
+          
+
+        </style>
+
+
+<header>
+    <div style="height: inherit; width: 20px;" id="logo">
+
+        <img id="logo-img" src="logo.png" alt="logo">   
+    <h2 id="myhouse">My House</h2> </div>
+    
+        <div id="nav">
+         <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+         </ul>
+    </div>
+    <div id="man">
+        <img src="man.png" alt="man">
+        <!-- <i class="fa-solid fa-user-secret"></i> -->
+    </div>
+
+</header>
+ <img  id="chandelier"  src="chandelier.png" alt="chandelier"> 
+
+ <div id="wallpaper">
+    <h1 class="wallpaper-head">Modern Comfortable Home Furniture</h1> <br>
+    <p class="wallpaper-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit temporibus alias, 
+        ipsum architecto vitae non aspernatur dignissimos deleniti, laboriosam minus expedita ex. 
+    </p>
+ </div>
+<section>
+
+    <h1 id="products">PRODUCTS</h1>
+    <p style="margin-left: 30%; font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Maxime ipsum eaque a exercitationem sit temporibus!</p>
+
+    <DIV class="container">
+
+
+    <div class="fur-box">
+        <img class="like" src="heart.png" alt="like">
+        <img class="fur-img" src="fur.jpg" alt="furniture">
+         <hr>
+        <h3>Furniture</h3>
+       <div class="prise"> <h2>120$</h2> <h2 class="button"> BUY</h2> </div>
+    </div>
+
+    <div class="fur-box">
+        <img class="like" src="heart.png" alt="like">
+        <img class="fur-img" src="fur.jpg" alt="furniture">
+         <hr>
+        <h3>Furniture</h3>
+       <div class="prise"> <h2>120$</h2> <h2 class="button"> BUY</h2> </div>
+    </div>
+
+    <div class="fur-box">
+        <img class="like" src="heart.png" alt="like">
+        <img class="fur-img" src="fur.jpg" alt="furniture">
+         <hr>
+        <h3>Furniture</h3>
+       <div class="prise"> <h2>120$</h2> <h2 class="button"> BUY</h2> </div>
+    </div>
+
+    <div class="fur-box">
+        <img class="like" src="heart.png" alt="like">
+        <img class="fur-img" src="fur.jpg" alt="furniture">
+         <hr>
+        <h3>Furniture</h3>
+       <div class="prise"> <h2>120$</h2> <h2 class="button"> BUY</h2> </div>
+    </div>
+
+    <div class="fur-box">
+        <img class="like" src="heart.png" alt="like">
+        <img class="fur-img" src="fur.jpg" alt="furniture">
+         <hr>
+        <h3>Furniture</h3>
+       <div class="prise"> <h2>120$</h2> <h2 class="button"> BUY</h2> </div>
+    </div>
+
+    <div class="fur-box">
+        <img class="like" src="heart.png" alt="like">
+        <img class="fur-img" src="fur.jpg" alt="furniture">
+         <hr>
+        <h3>Furniture</h3>
+       <div class="prise"> <h2>120$</h2> <h2 class="button"> BUY</h2> </div>
+    </div>
+
+    <div class="fur-box">
+        <img class="like" src="heart.png" alt="like">
+        <img class="fur-img" src="fur.jpg" alt="furniture">
+         <hr>
+        <h3>Furniture</h3>
+       <div class="prise"> <h2>120$</h2> <h2 class="button"> BUY</h2> </div>
+    </div>
+
+    <div class="fur-box">
+        <img class="like" src="heart.png" alt="like">
+        <img class="fur-img" src="fur.jpg" alt="furniture">
+         <hr>
+        <h3>Furniture</h3>
+       <div class="prise"> <h2>120$</h2> <h2 class="button"> BUY</h2> </div>
+    </div>
+
+
+   
+
+
+
+</DIV>
+
+    
+       </section>
+
+       <div id="second-wallpaper">
+        <h1 class="wallpaper-head" > AVROPA ISTEHSALINA DESTEK</h1>
+        <p class="wallpaper-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+            Nesciunt consequatur recusandae odio deleniti autem pariatur quaerat qui quis blanditiis rem!</p>
+
+       </div>
+       <footer>
+        <div id="about" style="display: block;
+        position: relative;
+    "> 
+
+            <h1 style="
+            z-index: 1;
+            position: relative;
+            top: 36px;
+            left: 15px;
+            font-size: 45;
+            font-family: Oleo Script, system-ui; ">About</h1>
+
+            <img 
+            style="
+           
+            position: relative;
+            top: 0px;
+            height: 50px;
+            "  
+            
+            
+            src="chandelier.png" alt="chandelier">
+            <img 
+            style="
+            position: relative;
+            top: 20px;
+            left: 35px;
+            height: 70px;
+            
+           "
+            
+            
+            src="chandelier.png" alt="chandelier">
+
+            <p style="
+            z-index: 1;
+            position: relative;
+            top:-35px;
+            left: 10px;
+            font-size: 25;
+            font-family: Oleo Script, system-ui;
+           
+            ">Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Adipisci id ea maxime eligendi 
+            officiis asperiores esse recusandae sunt, nostrum 
+            impedit libero nemo. Quam libero pariatur neque nulla 
+            nobis! Animi ab ipsa deserunt facere adipisci mollitia
+             veritatis, assumenda qui ex possimus. Voluptatibus 
+             eligendi, officiis molestias nulla quaerat saepe 
+             necessitatibus ipsam maiores, blanditiis aut nostrum 
+             vel iste magni nisi! Ea, illo. Mollitia molestias ea 
+             accusantium alias expedita cum eius eveniet,
+              necessitatibus rem, ducimus quis dolore fugit ipsum 
+            placeat perspiciatis, minus veniam earum.
+            </p></div>
+
+            <div id="slideshow"> 
+               
+                <img  style="width: 100%;height: 100%; " src="slide.jpg" alt="slide">
+            </div>
+       </footer>
+
+
+       
+ 
+    </body>
+</html>
